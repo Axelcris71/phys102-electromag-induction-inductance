@@ -19,8 +19,7 @@
 \usepackage{multicol} %% Merging columns in tables
 \usepackage{multirow} %% Merging rows in tables
 \usepackage{float}
-\usepackage{xcolor}
-\usepackage[table,xcdraw]{xcolor} %% used for coloring cells in tables
+\usepackage{xcolor} %% used for coloring cells in tables
 \usepackage{fancyhdr} %% Allows custom heading and footer
 \usepackage{lastpage} %% Allows Referencing the last page of the document
 \usepackage{calc}
@@ -34,7 +33,7 @@
 \usetikzlibrary{angles}
 \usetikzlibrary{intersections,decorations.pathreplacing,positioning}
 \usetikzlibrary{arrows.meta}
-\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.16}
 \usepgfplotslibrary{polar}
 
 \usepackage{hanging}
@@ -48,11 +47,7 @@
 
 \usepackage{enumitem}
 
-\usepackage{array}
-\setlength{\tabcolsep}{10pt}
-\renewcommand{\arraystretch}{1.5}
-\setlength{\arrayrulewidth}{0.35mm}
-\arrayrulecolor{black}
+
 
 \newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
 \newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
@@ -64,6 +59,7 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{gensymb}
+\usepackage{orcidlink}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -77,7 +73,7 @@
 
 \begin{document}
 	\noindent
-	SULADAY, Axelcris G. \hfill PHYS102: Electromagnetic Induction and Inductance
+	SULADAY, Axelcris G. \orcidlink{https://orcid.org/0009-0007-6882-7636} \hfill PHYS102: Electromagnetic Induction and Inductance
 	\rule{\textwidth}{1px}
 	\begin{center}
 		\hrulefill \quad \textsc{Induced emf and Magnetic Flux} \quad \hrulefill
@@ -194,7 +190,11 @@
 	\end{center}
 	
 	\begin{hangparas}{65pt}{1}
-		\textbf{Example 4:} An airplane with a wingspan of 30.0 m flies due north at a location where the downward component of the Earth's magnetic field of \(0.600\times10^{-4}\) T. There is also a component pointing due north which has a magnitude of \(0.470\times10^{-4}\) T.
+		\textbf{Example 4:} Calculate the inductance of solenoid containing 300 turns if the lenth of the solenoid is 25.0 cm and its cross-sectional area is \(4.00\times10^{-4}~\text{m}^2\). (b) Calculate the self-induced emf in the solenoid described in (a) if the current in the solenoid decreases at the rate of 50.0 A/s.
 	\end{hangparas}
+	
+	\begin{proof}[Solution]
+	
+	\end{proof}
 	
 \end{document}
